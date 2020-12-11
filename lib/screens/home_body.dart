@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import '../widgets/category.dart';
+import '../components/category/category.dart';
+import '../components/search_box.dart';
 
 class HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        SearchBox(
+          onChanged: (value) {},
+        ),
         SizedBox(
           height: 10,
         ),

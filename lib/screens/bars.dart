@@ -1,7 +1,9 @@
+import 'package:app_store/chat/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:app_store/constants.dart';
 import 'package:app_store/screens/home_body.dart';
+import 'package:app_store/screens/add_book.dart';
 
 //import 'package:app_store/components/bottom_nav_bar.dart';
 //import 'package:app_store/components/app_bar.dart';
@@ -43,12 +45,26 @@ class BottomNavBar extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.chat_rounded),
             color: ksecondaryColor,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ChatScreen(),
+                ),
+              );
+            },
           ),
           IconButton(
             icon: Icon(Icons.add_circle),
             color: ksecondaryColor,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AddBook(),
+                ),
+              );
+            },
           ),
           IconButton(
             icon: Icon(Icons.favorite),
