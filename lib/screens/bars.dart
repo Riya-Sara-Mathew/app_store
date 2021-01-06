@@ -109,6 +109,10 @@ class HomeScreen extends StatelessWidget {
                 .copyWith(fontWeight: FontWeight.bold),
             children: [
               TextSpan(
+                text: "Logophile",
+                style: TextStyle(color: kPrimaryColor),
+              ),
+              TextSpan(
                 text: "Book",
                 style: TextStyle(color: ksecondaryColor),
               ),
