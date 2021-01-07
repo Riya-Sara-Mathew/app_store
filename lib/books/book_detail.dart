@@ -22,7 +22,7 @@ class BookDetail extends StatelessWidget {
         ),
         backgroundColor: Colors.white,
         title: Text(
-          "Flutter Books",
+          "Logophile",
           style: TextStyle(
               fontSize: 17.0,
               color: Colors.black54,
@@ -131,7 +131,7 @@ class BookDetail extends StatelessWidget {
                         vertical: 18.0,
                       ),
                       child: Text(
-                        "\$${book.price}",
+                        "₹${book.price}",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 20.0,
@@ -170,7 +170,47 @@ class BookDetail extends StatelessWidget {
                       ),
                     ),
                   ),
-                )
+                ),
+                SizedBox(height: 3.0),
+                FadeBottomAnimation(
+                  delay: 4,
+                  child: Center(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 30.0,
+                        vertical: 18.0,
+                      ),
+                      child: Text(
+                        "${book.description}",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                FadeBottomAnimation(
+                  delay: 4,
+                  child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 30.0,
+                        vertical: 18.0,
+                      ),
+                      child: Text(
+                        "Book Details",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.black54,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+
+                    ),
+                  ),
+
               ],
             ),
           ),

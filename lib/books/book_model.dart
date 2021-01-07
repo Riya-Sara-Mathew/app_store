@@ -1,13 +1,23 @@
 class Book {
   final int id;
   final String name;
+  final String author;
   final String price;
   final String urlimage;
   final String description;
-  Book({this.id, this.name, this.price, this.urlimage, this.description});
+  Book({this.id, this.name, this.author, this.price, this.urlimage, this.description});
 }
 
 List<Book> dummyBook = [
+  Book(
+    id: 2,
+    name: "Origin - Dan Brown",
+    author: "Dan Brown",
+    price: "190",
+    urlimage: "assets/images/origin_DanBrown.jpg",
+    description:
+    "Origin is a 2017 mystery thriller novel by American author Dan Brown and the fifth installment in his Robert Langdon series, following Inferno. ",
+  ),
   Book(
     id: 1,
     name: "Secret in a Silicon Valley Startup",
