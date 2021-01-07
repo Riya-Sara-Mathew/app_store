@@ -12,46 +12,46 @@ class Category extends StatelessWidget {
         children: <Widget>[
           CategoryCard(
               Icon(
-                Icons.book,
+                Icons.auto_stories,
                 size: 34,
                 color: kPrimaryColor,
               ),
               'History'),
           CategoryCard(
               Icon(
-                Icons.computer,
+                Icons.psychology_rounded,
                 size: 34,
                 color: kPrimaryColor,
               ),
               'Education'),
           CategoryCard(
               Icon(
-                Icons.videogame_asset,
+                Icons.favorite,
                 size: 34,
                 color: kPrimaryColor,
               ),
               'Romance'),
           CategoryCard(
               Icon(
-                Icons.videocam,
+                Icons.follow_the_signs_rounded,
                 size: 34,
                 color: kPrimaryColor,
               ),
               'Motivational'),
           CategoryCard(
               Icon(
-                Icons.watch,
+                Icons.theater_comedy,
                 size: 34,
                 color: kPrimaryColor,
               ),
-              'Sci-Fi'),
+              'Comedy'),
           CategoryCard(
               Icon(
-                Icons.weekend,
+                Icons.outlet_rounded,
                 size: 34,
                 color: kPrimaryColor,
               ),
-              'Drama'),
+              'Horror'),
         ],
       ),
     );

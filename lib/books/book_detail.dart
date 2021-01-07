@@ -85,42 +85,7 @@ class BookDetail extends StatelessWidget {
                     ),
                   ),
                 ),
-                FadeBottomAnimation(
-                  delay: 2,
-                  child: Center(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.star,
-                          color: Colors.deepOrange,
-                          size: 14.0,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Colors.deepOrange,
-                          size: 14.0,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: Colors.deepOrange,
-                          size: 14.0,
-                        ),
-                        Icon(
-                          Icons.star_half,
-                          color: Colors.deepOrange,
-                          size: 14.0,
-                        ),
-                        Icon(
-                          Icons.star_border,
-                          color: Colors.deepOrange,
-                          size: 14.0,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+
                 SizedBox(height: 12.0),
                 FadeBottomAnimation(
                   delay: 4,
@@ -131,7 +96,7 @@ class BookDetail extends StatelessWidget {
                         vertical: 18.0,
                       ),
                       child: Text(
-                        "₹${book.price}",
+                        "Rs. ${book.price}",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 20.0,
@@ -156,16 +121,16 @@ class BookDetail extends StatelessWidget {
                         runSpacing: 8.0,
                         children: [
                           FadeInAnimation(
-                              delay: 6, child: CustomChip(name: "Financial")),
+                              delay: 6, child: CustomChip(name: "Thriller")),
                           FadeInAnimation(
                               delay: 6,
-                              child: CustomChip(name: "Technologies")),
+                              child: CustomChip(name: "Mystery")),
                           FadeInAnimation(
-                              delay: 6, child: CustomChip(name: "Economic")),
+                              delay: 6, child: CustomChip(name: "Novel")),
                           FadeInAnimation(
                               delay: 6, child: CustomChip(name: "Fantasy")),
                           FadeInAnimation(
-                              delay: 6, child: CustomChip(name: "Popular")),
+                              delay: 6, child: CustomChip(name: "Fiction")),
                         ],
                       ),
                     ),
@@ -199,11 +164,11 @@ class BookDetail extends StatelessWidget {
                         vertical: 18.0,
                       ),
                       child: Text(
-                        "Book Details",
+                        "\nBook Details\n\nAuthor \t: Dan Brown \nPublisher \t: Doubleday",
                         textAlign: TextAlign.left,
                         style: TextStyle(
                           fontSize: 16.0,
-                          color: Colors.black54,
+                          color: Colors.blueGrey  ,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
