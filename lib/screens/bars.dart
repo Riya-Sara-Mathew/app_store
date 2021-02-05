@@ -109,7 +109,7 @@ class HomeScreen extends StatelessWidget {
                 .copyWith(fontWeight: FontWeight.bold),
             children: [
               TextSpan(
-                text: "Logophile",
+                text: "Logophile ",
                 style: TextStyle(color: kPrimaryColor),
               ),
               TextSpan(
@@ -136,26 +136,37 @@ class HomeScreen extends StatelessWidget {
 //            header
             new UserAccountsDrawerHeader(
               accountName: Text(
-                'Riya Mathew',
+                'Caroline Forbes',
                 style: TextStyle(
-                  color: Colors.grey,
+                  color: Colors.white,
                 ),
               ),
               accountEmail: Text(
-                'riya.s.mathew47@gmail.com',
+                'caroline.forbes@gmail.com',
                 style: TextStyle(
-                  color: Colors.grey,
+                  color: Colors.white,
                 ),
               ),
               currentAccountPicture: GestureDetector(
                 child: new CircleAvatar(
                   backgroundColor: Colors.grey,
-                  child: Icon(
+                  /*child: Icon(
                     Icons.person,
                     color: Colors.white,
                     size: 40,
-                  ),
+                  ),*/
+                    child: Container(
+                      width: 120.0,
+                      height: 160.0,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image: DecorationImage(
+                            image: AssetImage("assets/images/caroline_forbes.jpg"),
+                            fit: BoxFit.cover,
+                          )),
+                    ),
                 ),
+
               ),
               decoration: new BoxDecoration(color: kPrimaryColor),
             ),

@@ -16,20 +16,20 @@ class User {
 final User currentUser = User(
   id: 0,
   name: 'Harry',
-  imageUrl: 'assets/images/nick-fury.jpg',
+  imageUrl: 'assets/images/caroline_forbes.jpg',
   isOnline: true,
 );
 
 // USERS
 final User john = User(
   id: 1,
-  name: 'John',
-  imageUrl: 'assets/images/ironman.jpeg',
-  isOnline: false,
+  name: 'Stefan Salvatore',
+  imageUrl: 'assets/images/stefan.jpg',
+  isOnline: true,
 );
 final User jennifer = User(
   id: 2,
-  name: 'Jennifer',
-  imageUrl: 'assets/images/captain-america.jpg',
-  isOnline: true,
+  name: 'Bonnie Bennet',
+  imageUrl: 'assets/images/bonnie.jpg',
+  isOnline: false,
 );

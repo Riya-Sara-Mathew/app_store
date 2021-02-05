@@ -25,7 +25,7 @@ class SplashScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.display3,
                 children: [
                   TextSpan(
-                    text: "logo",
+                    text: "Logo",
                   ),
                   TextSpan(
                     text: "phile",
